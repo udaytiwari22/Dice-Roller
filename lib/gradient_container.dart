@@ -1,23 +1,28 @@
 import 'package:dice_roller_app/styled_text.dart';
 import 'package:flutter/material.dart';
 
+
+// Alingment? startAlingment;
+var startAlingment=Alignment.topRight;
+var endAlingment=Alignment.bottomLeft;
+
 class GradientContainer extends StatelessWidget {
   const GradientContainer({super.key});
   @override
   Widget build(context) {
     return Container(
-      decoration: const BoxDecoration(
+      decoration:  BoxDecoration(
         gradient: LinearGradient(
-          colors: [
+          colors: const [
             Color.fromARGB(255, 50, 92, 160),
             Color.fromARGB(255, 102, 149, 230)
           ],
-          begin: Alignment.topRight,
-          end: Alignment.bottomLeft,
+          begin: startAlingment,
+          end: endAlingment ,
         ),
       ),
       child: const Center(
-        child: StyledText(),
+        child: StyledText('World Government'),
       ),
     );
   }
