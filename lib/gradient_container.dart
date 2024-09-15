@@ -6,11 +6,11 @@ var startAlingment = Alignment.topRight;
 var endAlingment = Alignment.bottomLeft;
 
 class GradientContainer extends StatelessWidget {
-   const GradientContainer(this.color1, this.color2, {super.key});
+  const GradientContainer(this.color1, this.color2, {super.key});
 
   final Color color1;
   final Color color2;
-  
+
   @override
   Widget build(context) {
     return Container(
